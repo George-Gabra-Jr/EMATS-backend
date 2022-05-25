@@ -1,0 +1,30 @@
+[package]
+name = "emats"
+version = "0.1.0"
+edition = "2021"
+authors = ["George Gabra Jr <george.gabra.jr@outlook.com>"]
+
+
+[dependencies]
+actix-web = "4.0.0-rc.2"
+
+log = "0.4.0"
+env_logger = "0.8.4"
+ansi_term = "0.12"
+
+serde = { version = "1.0.43", features = ["derive"] }
+serde_json = "1.0.16"
+
+validator = "0.10"
+validator_derive = "0.10"
+
+dotenv = "0.15.0"
+config = "0.11.0"
+
+tokio-pg-mapper = "0.2.0"
+tokio-pg-mapper-derive = "0.2.0"
+tokio-postgres = "0.7.5"
+deadpool-postgres = { version = "0.10.1", features = ["serde"]}
+
+uuid = { version = "0.8", default-features = false, features = ["v4"] }
+passwords = "3.1.8"
